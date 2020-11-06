@@ -1,0 +1,182 @@
+*{
+    font-family: Roboto;
+}
+body{
+    background-color: #ECECEC;
+}
+.createTask{
+   display: flex;
+   justify-content: center;
+}
+
+.container{
+    width: 500px;
+    padding: 20px ;
+    background:  #586FE8;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.container input{
+
+   height: 3em;
+   flex-grow: 1;
+   background: #F9F9F9;
+   border-radius: 8px;
+   border:none;
+   text-indent: 2em;
+
+   font-style: normal;
+   font-weight: bold;
+   color:rgb(102, 102, 102);
+}
+.container ::placeholder{
+    color: #9e9d9d;
+   
+    font-style: normal;
+    font-weight: bold;
+}
+
+.container button{
+    margin-left: 0em;
+    height: 3em;
+    margin-left: 2em;
+    width: 7em;
+    border-radius: 8px;
+    border:none;
+    background: #374BB4;
+    color:  #F9F9F9;
+    font-style: normal;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color:rgb(240, 90, 90);
+    color: white;
+}
+
+.task__priority{
+    position: absolute;
+    width: 100%;
+    margin-top: 8em;
+    margin-left: 0;
+    display: flex;
+
+    justify-content: center;
+}
+.gridExample{
+    left: 2em;
+    text-align: center;
+    margin-top: 2em;
+    column-gap: 2em;
+   
+    height: 5em;
+    width: 80%;
+    display: grid;
+    grid-template-columns:  33% 33% 33%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "todo doing done"
+    "todoTask doindTask doneTask";
+}
+.priority1{
+    border-radius: 8px 8px 0 0;
+    font-style: normal;
+    font-weight: bold;
+}
+/*TITLES*/
+.todo1{
+    grid-area: todo;
+    background-color:  #d8d8d8;
+    color: rgb(117, 117, 117);
+}
+
+.doing1{
+    grid-area: doing;
+    background-color:  #FFDA57; 
+    color: rgb(233, 159, 1);
+}
+
+.done1{
+    grid-area: done;
+    background-color: #81DA62;
+    color: rgb(63, 105, 22);
+}
+
+/*task---------------->>>>>*/
+.todoTask{
+    background-color: #e4e2e2;
+
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.doingTask{
+    background-color: rgb(255, 234, 117);
+}
+.doneTask{
+    background-color: rgb(160, 250, 160);
+}
+
+.task{
+    text-align: left;
+    
+    margin-top: 1em;
+    
+   
+    height: 5em;
+  
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns:  80% auto;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+    "descri delete"
+    "descri adavnce "
+    "date reverse";
+}
+.task button{
+    border-radius: 3px;
+    border:none;
+    font-style: normal;
+    font-weight: bold;
+}
+.dateCurrent{
+    grid-area: date; 
+    font-size: 10px;
+    color: #586FE8;
+    margin-left: 9px;
+}
+.delete {
+    grid-area: delete; 
+    background-color: #ff9a9a;
+    color: #e46565;
+    font-size: 14px;
+}
+.update{
+    grid-area: adavnce;
+    background-color:rgb(160, 250, 160);
+    color: rgb(111, 190, 111);
+    font-size: 19px;
+}
+.reverse{
+    grid-area: reverse; 
+    background-color: #9aadff;
+    color:  #6373bb;
+    font-size: 19px;
+}
+.todoTask .task{
+    background-color: rgb(175, 175, 175);
+    color: rgb(75, 75, 75);
+}
+.doingTask .task{
+    background-color: rgb(247, 213, 63);
+    color: rgb(196, 134, 2);
+}
+.doneTask .task{
+    background-color: rgb(107, 219, 85);
+    color: rgb(63, 105, 22);
+}

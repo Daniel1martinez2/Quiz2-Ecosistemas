@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="createTask">
+        <div class="container" >
+            <input type="text" placeholder="Task description" class="textTask">
+            <button class="send">Add</button>
+        </div>
+    </div>
+
+   
+
+    <div class="gridExample">
+        <div class="todo1 priority1"><p>To to</p></div>
+        <div class="doing1 priority1"><p>Doing</p></div>
+        <div class="done1 priority1"><p>Done</p></div>
+
+
+        <div class="todoTask">
+          
+        
+           
+
+        </div>
+        <div class="doingTask">
+        
+        </div>
+        <div class="doneTask">
+           
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+
+
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyCLjz64kCorNjRDA5DD53ItOGwGds7kMqE",
+    authDomain: "ecosemana11.firebaseapp.com",
+    databaseURL: "https://ecosemana11.firebaseio.com",
+    projectId: "ecosemana11",
+    storageBucket: "ecosemana11.appspot.com",
+    messagingSenderId: "687042299675",
+    appId: "1:687042299675:web:29d54b9a95fbd61d9b35be",
+    measurementId: "G-FJ58MZRJY4"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+<script src="Task.js"></script>
+<script src="index.js"></script>
